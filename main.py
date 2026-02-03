@@ -245,6 +245,19 @@ def lihat_saldo():
     print("---")
 
 
+def tampilkan_tabel_fitur():
+    """Tampilkan tabel monospace fitur aplikasi"""
+    print("┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓")
+    print("┃ **Fitur**            ┃ **Deskripsi**                         ┃ **Status**          ┃")
+    print("┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━┩")
+    print("│ Menambah Transaksi   │ Input jumlah, kategori, keterangan    │ ✅ Selesai          │")
+    print("│ Lihat Laporan        │ Ringkasan per minggu/bulan            │ ⚙️ Dalam Pengembangan │")
+    print("│ Kategori & Anggaran  │ Kelola kategori & batas anggaran      │ 🔒 Belum            │")
+    print("│ Pengingat            │ Notifikasi transaksi berkala          │ ✨ Rencana          │")
+    print("└──────────────────────┴───────────────────────────────────────┴─────────────────────┘")
+    print("")
+
+
 def menu():
     print("=== Aplikasi Pengelola Uang Saku ===")
     print("1. Tambah pemasukan")
@@ -253,7 +266,8 @@ def menu():
     print("4. Ringkasan total")
     print("5. Atur / Lihat budget per kategori")
     print("6. Laporan & Grafik bulanan")
-    print("7. Keluar")
+    print("7. Tampilkan tabel fitur")
+    print("8. Keluar")
 
 
 if __name__ == '__main__':
@@ -287,7 +301,8 @@ if __name__ == '__main__':
                 grafik_pengeluaran()
             else:
                 pass
-        elif pilihan == "7":
+        
+        elif pilihan == "8":
             print("Terima kasih!")
             break
         else:
